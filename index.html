@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Flowchart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app">
+    <div id="flowContainer">
+	  <img id="flowImg" src="flowchart.png" alt="Flowchart" />
+
+      <!-- Hotspots -->
+      <button class="hotspot" data-left="51" data-top="0.1" data-width="10" data-height="6" data-target="link1"></button>
+      <button class="hotspot" data-left="3" data-top="65" data-width="12" data-height="6" data-target="link2"></button>
+      <button class="hotspot" data-left="3" data-top="78" data-width="12" data-height="5" data-target="link3"></button>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay">
+      <div id="overlay-inner">
+        <button id="closeBtn" aria-label="Close overlay">&times;</button>
+        <div id="overlay-toolbar">
+          <button id="backBtn" class="navBtn">Back</button>
+          <span id="overlay-title"></span>
+        </div>
+        <div id="overlay-content">
+          <img id="overlay-img" src="" alt="Linked figure" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
